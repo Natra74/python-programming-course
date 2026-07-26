@@ -1,0 +1,23 @@
+#Assignment : BMI Calculator
+
+# Input
+weight = float(input("กรอกน้ำหนัก (kg): "))
+height = float(input("กรอกส่วนสูง (m): "))
+
+bmi = weight / (height ** 2)
+
+print("BMI =", round(bmi, 2))
+
+if bmi < 18.5:
+    cate = "น้ำหนักน้อย"
+elif bmi < 23:
+    cate = "น้ำหนักปกติ"
+elif bmi < 25:
+    cate = "น้ำหนักเกิน"
+elif bmi < 30:
+    cate = "อ้วน"
+else:
+    cate = "อ้วนมาก"
+
+print("\n" + "=" * 40 + "\n")
+print(cate)
